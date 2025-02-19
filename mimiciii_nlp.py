@@ -65,7 +65,7 @@ for _, row in ms_notes_df.iterrows():
     text = re.sub(r'\s+([.,!?%])', r'\1', text)
     nmosd_notes.append(text)
 
-"""### Part 1 - NLP of MS patient notes using Spacy"""
+"""### Part 1 - NLP of NMOSD patient notes using Spacy"""
 
 # Entity visualization
 for i in range(3):
@@ -131,7 +131,7 @@ for word in vocabs:
 # Plot TSNE using pretrained model
 tsne_plot(pretrained_model, corpus_in_pretrained_model, preTrained=True)
 
-"""### Part 2 - NLP of MS patient notes using SciSpacy"""
+"""### Part 2 - NLP of NMOSD patient notes using SciSpacy"""
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%capture
@@ -179,7 +179,7 @@ for word in vocabs:
 # Plot TSNE using pretrained model
 tsne_plot(pretrained_model, corpus_in_pretrained_model, preTrained=True)
 
-"""### Part 3 - NLP of MS patient notes using BlueBert"""
+"""### Part 3 - NLP of NMOSD patient notes using BlueBert"""
 
 # Commented out IPython magic to ensure Python compatibility.
 # %%capture
